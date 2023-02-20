@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div>파란색</div>
+    <div>연회색</div>
+    <div>흰색</div>
+    <div>파란색(섹션)</div>
+    <div>진회색</div>
+  </div>
+  <script>
+    var a = document.getElementById('root');//이름직시 아 = 문서.아이디찾아줘('뿌리')
+    console.log(a);//니가 중간에 찍어 (아)라는 것
+    console.log(a.lastChild);//니가 중간에 찍어 (아.마지막 아이)라는 것
+    console.log(a.firstChild);//니가 중간에 찍어 (아.첫번쨰 아이)라는 것
+    console.log(a.children[1]);
+</script>
+</body>
+</html>

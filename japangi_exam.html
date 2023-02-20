@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div>
+      <h2>밀키스 가격</h2>
+      <p>900</p>
+    </div>
+    <div>
+      <h2>코카콜라 가격</h2>
+      <p>2800</p>
+    </div>
+    <div>
+      <h2>원장님 조르기</h2>
+      <p>0</p>
+    </div>
+  </div>
+  <script>
+    // var cokePrice = 2800;
+    // var milkyPrice = 900;
+    // console.log(cokePrice-milkyPrice);
+    
+    // var result = 2800-900;
+    // console.log(result)
+
+    var japan = document.getElementById("root")
+
+    console.dir(japan);
+
+    console.log(japan.children[0].children[1].innerHTML);
+
+    const milkyPrice = japan.children[0].children[1].innerHTML;
+    const cokePrice = japan.children[1].children[1].innerHTML;
+
+    var a =  cokePrice-milkyPrice;
+    var b =  cokePrice + milkyPrice;
+    console.log("--------------------");
+    console.log("코카콜라 - 밀키스 : " + a);
+    console.log("코카콜라 + 밀키스 : " + cokePrice+milkyPrice);
+    console.log("코카콜라 + 밀키스 : " + (cokePrice+milkyPrice));
+
+  </script>
+</body>
+</html>
